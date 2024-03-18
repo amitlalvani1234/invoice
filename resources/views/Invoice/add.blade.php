@@ -4,7 +4,7 @@
     <form id="invoice_add" method="POST" action="{{ route('invoice.save') }}" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
-            <label for="invoice_no" class="form-label">Invoice Number</label>
+            <label for="invoice_no" class="form-label">Invoice Number(Auto Genrated)</label>
             <input type="text" name="invoice_no" class="form-control" value="{{ $invoice_no }}" id="invoice_no" required
                 readonly>
         </div>
